@@ -3,7 +3,6 @@ package co.uk.silvania.cities.largebuildings;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
-import co.uk.silvania.cities.GuiHandler;
 import co.uk.silvania.cities.core.CoreBlocks;
 import co.uk.silvania.cities.core.FlenixCities_Core;
 import co.uk.silvania.cities.largebuildings.blocks.TileEntityEscalatorEntity;
@@ -22,7 +21,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
-@Mod(modid=FlenixCities_LargeBuildings.modid, name="FlenixCities LargeBuildings", version="0.1.2")
+@Mod(modid=FlenixCities_LargeBuildings.modid, name="FlenixCities LargeBuildings", version="0.2.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class FlenixCities_LargeBuildings { 
 	
@@ -30,7 +29,7 @@ public class FlenixCities_LargeBuildings {
 	
     @Instance(FlenixCities_LargeBuildings.modid)
     public static FlenixCities_LargeBuildings instance;
-    public static GuiHandler cityGuiHandler = new GuiHandler();
+    //public static GuiHandler cityGuiHandler = new GuiHandler();
 
     @SidedProxy(clientSide="co.uk.silvania.cities.largebuildings.client.ClientProxy", serverSide="co.uk.silvania.cities.largebuildings.CommonProxy")
     public static CommonProxy proxy;
